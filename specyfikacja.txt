@@ -1,0 +1,16 @@
+Program obliczaj¹cy wielkoœci fizyczne
+	W programie u¿ytkownik ma mo¿liwoœæ wybrania, z jakiego wzoru chce skorzystaæ. Na postawie wprowadzonych danych, program wykonuje obliczenia. Wynik wypisywany jest na ekran. U¿ytkownik ma mo¿liwoœæ wydrukowania danych. Wszystkie dane zapisuj¹ siê w pliku. U¿ytkownik ma tak¿e mo¿liwoœæ przegl¹dania dostêpnych wzorów. 
+Funkcjonalne:
+•	Program oblicza wielkoœci fizyczne;
+•	Wyœwietlanie wyników;
+•	Wyœwietlanie wszystkich wzorów;
+•	Drukowanie wyników;
+•	Zapisywanie wyników do pliku.
+Niefunkcjonalne:
+•	Program konsolowy;
+•	Czytelne menu;
+•	Logo aplikacji.
+S³ownik:
+PDF - plik tekstowy z rozszerzeniem .pdf.
+Program - sekwencja symboli opisuj¹ca obliczenia zgodne z pewnymi zwi¹zanymi z jêzykiem programowania.
+
