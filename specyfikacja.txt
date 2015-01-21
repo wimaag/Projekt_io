@@ -19,6 +19,9 @@ Niefunkcjonalne:
 -Czytelne menu;
 -Logo aplikacji.
 
+
+
+
 S³ownik:
 Program - sekwencja symboli opisuj¹ca obliczenia zgodne z pewnymi zwi¹zanymi z jêzykiem programowania.
 U¿ytkownik - osoba korzystaj¹ca z systemu komputerowego, posiadaj¹ca unikatow¹ nazwê s³u¿¹c¹ do jej 
