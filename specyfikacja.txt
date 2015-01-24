@@ -1,0 +1,28 @@
+	`			Program obliczaj¹cy wielkoœci fizyczne
+
+	W programie u¿ytkownik ma mo¿liwoœæ wybrania, z jakiego wzoru chce skorzystaæ. 
+Wprowadzane dane s¹ sprawdzane podczas ka¿dej próby wdra¿ania danych przez u¿ytkownika.
+Na postawie wprowadzonych poprawnych danych, program wykonuje obliczenia. Wynik wypisywany jest na ekran, a tak¿e 
+Wszystkie wyniki zapisuj¹ siê w pliku. U¿ytkownik ma mo¿liwoœæ wydrukowania danych. 
+U¿ytkownik mo¿e te¿ przegl¹daæ dostêpne wzory.
+
+Funkcjonalne:
+-akceptowanie odpowiednich danych;
+-Obliczanie wielkoœci fizycznych;
+-Wyœwietlanie wyników;
+-Wyœwietlanie wszystkich wzorów;
+-Drukowanie wyników;
+-Zapisywanie wyników do pliku.
+
+Niefunkcjonalne:
+-Program konsolowy;
+-Czytelne menu;
+-Logo aplikacji.
+
+
+
+
+S³ownik:
+Program - sekwencja symboli opisuj¹ca obliczenia zgodne z pewnymi zwi¹zanymi z jêzykiem programowania.
+U¿ytkownik - osoba korzystaj¹ca z systemu komputerowego, posiadaj¹ca unikatow¹ nazwê s³u¿¹c¹ do jej 
+identyfikacji w celu umo¿liwienia dostêpu do systemu informatycznego oraz korzystania z jego zasobów.
