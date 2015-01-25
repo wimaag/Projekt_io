@@ -4,10 +4,21 @@
 #include <cmath>
 #include <stdio.h>
 #include <fstream>
+
+/**
+@brief Program obliczajacy wielkosci fizyczne
+
+@author Agnieszka Osinska, Wioletta Mierzwa, Martyna Mylak
+
+@date 2014 rok
+*/
+
 using namespace std;
 class menu;
 class wzor;
 class dane;
+
+/// @brief Interfejs uzytkownika.
 
 class menu{
 	
@@ -43,11 +54,20 @@ void logo(){
 	cout << "\t\t\t       ``-'   ``-'		\n";
 	cout << "\t\t-----------------------------------------" << endl << endl;
 }
+
+/// @brief Klasa pobiera dane od uzytkownika, pod warunkiem, ze sa one poprawne.
+
 class dane{
 public:
 	float d1;
 	float d2;
 public:
+	
+	/** @brief Uzytkownik wprowadza konkretne wartosci o ktore system poprosi.
+		Wprowadzane dane musza byc poprawne, jezeli takie nie beda system poprosi o ponowne ich wpisanie.
+		@param nr numer operacji do wykonania.
+	*/
+	
 	dane wprowadz(int nr){
 		if (nr == 1){
 			cout << "\nPodaj wartosc pracy: ";
@@ -131,6 +151,13 @@ public:
 		cout << "\n\tDruga wartosc danej: " << this->d2 << endl;
 	}
 };
+
+/** @brief  Uzytkownik wybiera wielkosc fizyczna ktora chce obliczyc.
+			Klasa "wzor" stworzy 2 dane potrzebne do obliczen.
+	@return System zwraca wzor.
+
+*/
+
 class wzor: public dane{
 	
 public:
@@ -152,6 +179,7 @@ public:
 		}
 		return this->nr_s;
 	}
+	
 	float znajdz_licz(dane a){
 		float w;
 		if (nr_s == 1 || nr_s==3){
@@ -168,11 +196,19 @@ public:
 
 };
 
+/** @brief Klasa generuje wynik 
+
+*/
+
 class rezultat: wzor{	
 public:
 	float wynik;
 	float znajdz_licz(dane a);
 public:
+	
+/** @brief zapisuje wyniki do pliku o nazwie "wyniki.txt" 
+	@param obiekt typu wzor przechowuje wzor wielkosci fizycznej ktora wybralismy do wyliczenia.
+*/
 	void zapisz(wzor w)
 	{ 
 		fstream plik("wyniki.txt", ios::app);
@@ -186,12 +222,20 @@ public:
 		plik.close(); 
 	
 	}
+	
+/**	@param w wzor obliczenia danej wielkosci fizycznej
+	@param a obiekt typu dane ktory posiada wartosci 2 danych
+	@return System zwraca wynik.
+*/
+
 	rezultat(wzor w, dane a)
 	{
 		wynik = w.znajdz_licz(a);
 	}
 
 };
+
+/// @brief Klasa drukuje uzytkownikowi rezultat wykonanej operacji fizycznej.
 
 class druk: rezultat
 { 
