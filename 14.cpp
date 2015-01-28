@@ -14,16 +14,10 @@
 */
 
 using namespace std;
-class menu;
 class wzor;
 class dane;
 
 /// @brief Interfejs uzytkownika.
-
-class menu{
-	
-public:
-	unsigned int a;
 	void wyswietl(){
 		cout<<"____________________________________________________________________________\n"<<endl;
 		cout<<"\t\t\t\tMENU: "<<endl<<endl;
@@ -32,15 +26,16 @@ public:
 		cout << "\t\t\t3.Zamknij" << endl;
 	}
 	unsigned int wybierz(){
+		int a;
 		cout << "\nWybierz z menu, jaka operacje chcesz wykonac: ";
-		cin >> this->a;
-		while((this->a)<1 || (this->a)>3){
+		cin >>a;
+		while((a)<1 || (a)>3){
 			cout << "\nError: Wprowadz cyfre z zakresu 1-3: ";
-			cin >> this->a;
+			cin >>a;
 		}
-		return this->a;
+		return a;
 	}
-};
+
 void logo(){
 	cout << "\t\t-----------------------------------------" << endl;
 	cout << "\t\t\tProsty kalkulator fizyczny" << endl;
@@ -203,7 +198,6 @@ public:
 class rezultat: wzor{	
 public:
 	float wynik;
-	float znajdz_licz(dane a);
 public:
 	
 /** @brief zapisuje wyniki do pliku o nazwie "wyniki.txt" 
@@ -247,10 +241,9 @@ int main()
 {
 	logo();
 	while(1){
-	menu pierwsze;
-	pierwsze.wyswietl();
+	wyswietl();
 	int i;
-	i=pierwsze.wybierz();
+	i=wybierz();
 	int numer = 0;
 	cout << "\nWybrales operacje numer:   " << i<< endl;
 	
